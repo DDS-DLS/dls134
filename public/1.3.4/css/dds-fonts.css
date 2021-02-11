@@ -1,0 +1,1865 @@
+@charset "UTF-8";
+/* roboto-300 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light");
+  src: url("//uicore.dellcdn.com/1.3.4/fonts/Roboto-Light-v2.137.woff2") format("woff2"), url("//uicore.dellcdn.com/1.3.4/fonts/Roboto-Light-v2.137.woff") format("woff"), url("//uicore.dellcdn.com/1.3.4/fonts/Roboto-Light-v2.137.ttf") format("truetype"), url("//uicore.dellcdn.com/1.3.4/fonts/Roboto-Light-v2.137.eot"), url("//uicore.dellcdn.com/1.3.4/fonts/Roboto-Light-v2.137.eot?#iefix") format("embedded-opentype");
+  /* IE6-IE8 */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular");
+  src: url("//uicore.dellcdn.com/1.3.4/fonts/Roboto-Regular-v2.137.woff2") format("woff2"), url("//uicore.dellcdn.com/1.3.4/fonts/Roboto-Regular-v2.137.woff") format("woff"), url("//uicore.dellcdn.com/1.3.4/fonts/Roboto-Regular-v2.137.ttf") format("truetype"), url("//uicore.dellcdn.com/1.3.4/fonts/Roboto-Regular-v2.137.eot"), url("//uicore.dellcdn.com/1.3.4/fonts/Roboto-Regular-v2.137.eot?#iefix") format("embedded-opentype");
+  /* IE6-IE8 */
+}
+
+@font-face {
+  font-family: 'dds-icons';
+  font-style: normal;
+  font-weight: normal;
+  src: url("//uicore.dellcdn.com/1.3.4/icons/dds-icons.woff2") format("woff2"), url("//uicore.dellcdn.com/1.3.4/icons/dds-icons.woff") format("woff"), url("//uicore.dellcdn.com/1.3.4/icons/dds-icons.ttf") format("truetype"), url("//uicore.dellcdn.com/1.3.4/icons/dds-icons.eot"), url("//uicore.dellcdn.com/1.3.4/icons/dds-icons.eot?#iefix") format("embedded-opentype");
+  /* IE6-IE8 */
+}
+
+.dds__flag-icons {
+  display: inline-block;
+  fill: currentColor;
+  height: 2rem;
+  stroke: currentColor;
+  stroke-width: 0;
+  width: 2rem;
+}
+
+.dds__svg-icons {
+  display: inline-block;
+  fill: currentColor;
+  height: 3rem;
+  stroke: currentColor;
+  stroke-width: 0;
+  width: 3rem;
+}
+
+.dds__icons {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dds-icons';
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+}
+
+.dds__icon-grid-container {
+  align-items: center;
+  font-size: 3rem;
+  height: 100%;
+  outline: 0.0625rem solid #cccccc;
+  padding: 0.625rem;
+}
+
+.dds__icon-grid-container .dds__icon-grid-item {
+  color: #0076ce;
+  float: left;
+  font-size: 3rem;
+  margin: 0.625rem;
+}
+
+.dds__icon-grid-container .dds__icon-grid-text {
+  font-size: 1rem;
+  margin-bottom: 0.0325rem;
+  padding: 0.3125rem;
+}
+
+.dds__icon-grid-container .dds__icon-grid-text-muted {
+  color: #808080;
+  font-size: 0.675rem;
+  padding: 0.3125rem;
+}
+
+.dds__icon-svg-grid-container {
+  align-items: center;
+  display: flex;
+  font-size: 3rem;
+  height: 100%;
+  justify-content: flex-start;
+  outline: 0.0625rem solid #cccccc;
+  padding: 0.625rem;
+}
+
+.dds__icon-svg-grid-container .dds__icon-svg-grid-item {
+  align-items: center;
+  color: #0076ce;
+  display: inherit;
+  font-size: 3rem;
+  margin: 0.625rem;
+}
+
+.dds__icon-svg-grid-container .dds__icon-grid-text {
+  font-size: 1rem;
+  margin-bottom: 0.0325rem;
+  padding: 0.3125rem;
+}
+
+.dds__icon-svg-grid-container .dds__icon-grid-text-muted {
+  color: #808080;
+  font-size: 0.675rem;
+  padding: 0.3125rem;
+}
+
+.dds__icon-svg-grid-container ol {
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+
+.dds__2-in-1::before {
+  content: "";
+}
+
+.dds__d-display::before {
+  content: "🖵";
+}
+
+.dds__hinge::before {
+  content: "🖳";
+}
+
+.dds__accessibility::before {
+  content: "♿";
+}
+
+.dds__add-cir::before {
+  content: "";
+}
+
+.dds__add-sqr::before {
+  content: "⊞";
+}
+
+.dds__airplane::before {
+  content: "🛪";
+}
+
+.dds__alarm-bell::before {
+  content: "🕭";
+}
+
+.dds__alarm-clock::before {
+  content: "🕑";
+}
+
+.dds__alert-check-cir::before {
+  content: "🗸";
+}
+
+.dds__alert-check-sqr::before {
+  content: "🗹";
+}
+
+.dds__alert-error::before {
+  content: "⛔";
+}
+
+.dds__alert-info-cir::before {
+  content: "🛈";
+}
+
+.dds__alert-info-sqr::before {
+  content: "";
+}
+
+.dds__alert-notice::before {
+  content: "⚠";
+}
+
+.dds__app-window::before {
+  content: "🗔";
+}
+
+.dds__app-window-search::before {
+  content: "";
+}
+
+.dds__arrange::before {
+  content: "";
+}
+
+.dds__arrow-cir-down::before {
+  content: "⭳";
+}
+
+.dds__arrow-cir-left::before {
+  content: "⭰";
+}
+
+.dds__arrow-cir-right::before {
+  content: "⭲";
+}
+
+.dds__arrow-cir-up::before {
+  content: "⭱";
+}
+
+.dds__arrow-down::before {
+  content: "↓";
+}
+
+.dds__arrow-export::before {
+  content: "↗";
+}
+
+.dds__arrow-left::before {
+  content: "←";
+}
+
+.dds__arrow-right::before {
+  content: "→";
+}
+
+.dds__arrow-tri-down::before {
+  content: "▽";
+}
+
+.dds__arrow-tri-left::before {
+  content: "◁";
+}
+
+.dds__arrow-tri-right::before {
+  content: "▷";
+}
+
+.dds__arrow-tri-solid-right::before {
+  content: "⏵";
+}
+
+.dds__arrow-tri-up::before {
+  content: "⃤";
+}
+
+.dds__arrow-up::before {
+  content: "↑";
+}
+
+.dds__assistance::before {
+  content: "💁";
+}
+
+.dds__audio-card::before {
+  content: "";
+}
+
+.dds__audio-speaker::before {
+  content: "🔈";
+}
+
+.dds__audio-speaker-levels::before {
+  content: "";
+}
+
+.dds__audio-speaker-mute::before {
+  content: "🔇";
+}
+
+.dds__audio-speaker-off::before {
+  content: "";
+}
+
+.dds__audio-speaker-on::before {
+  content: "🔊";
+}
+
+.dds__award-certificate::before {
+  content: "🎗";
+}
+
+.dds__award-trophy::before {
+  content: "🏆";
+}
+
+.dds__barbell::before {
+  content: "";
+}
+
+.dds__battery-charge::before {
+  content: "🔋";
+}
+
+.dds__battery-empty::before {
+  content: "";
+}
+
+.dds__battery-horiz-empty::before {
+  content: "";
+}
+
+.dds__battery-horiz-full::before {
+  content: "";
+}
+
+.dds__battery-horiz-half::before {
+  content: "";
+}
+
+.dds__battery-vert-full::before {
+  content: "";
+}
+
+.dds__battery-vert-half::before {
+  content: "";
+}
+
+.dds__bluetooth::before {
+  content: "";
+}
+
+.dds__bolt::before {
+  content: "🗲";
+}
+
+.dds__bookmark::before {
+  content: "🔖";
+}
+
+.dds__book-open::before {
+  content: "📖";
+}
+
+.dds__brand-alienware::before {
+  content: "";
+}
+
+.dds__brand-dell::before {
+  content: "";
+}
+
+.dds__brand-dellemc::before {
+  content: "";
+}
+
+.dds__brand-dell-gaming::before {
+  content: "";
+}
+
+.dds__brand-delltechnologies::before {
+  content: "";
+}
+
+.dds__brand-delltechnologiesvert::before {
+  content: "";
+}
+
+.dds__brand-ms-teams::before {
+  content: "";
+}
+
+.dds__brand-skype::before {
+  content: "";
+}
+
+.dds__brand-windows::before {
+  content: "";
+}
+
+.dds__brightness::before {
+  content: "🔅";
+}
+
+.dds__calculator::before {
+  content: "🖩";
+}
+
+.dds__calendar::before {
+  content: "📅";
+}
+
+.dds__calendar-search::before {
+  content: "";
+}
+
+.dds__camera::before {
+  content: "📷";
+}
+
+.dds__cancelled::before {
+  content: "⃠";
+}
+
+.dds__capture-image::before {
+  content: "+";
+}
+
+.dds__card-credit::before {
+  content: "💴";
+}
+
+.dds__card-info::before {
+  content: "💳";
+}
+
+.dds__card-swipe-left::before {
+  content: "";
+}
+
+.dds__card-swipe-right::before {
+  content: "";
+}
+
+.dds__carry-case::before {
+  content: "💼";
+}
+
+.dds__cart::before {
+  content: "🛒";
+}
+
+.dds__chain-link::before {
+  content: "🖇";
+}
+
+.dds__charge-back::before {
+  content: "💰";
+}
+
+.dds__charge-back-folder::before {
+  content: "";
+}
+
+.dds__charge-back-report::before {
+  content: "";
+}
+
+.dds__chart-bars-axis::before {
+  content: "📊";
+}
+
+.dds__chart-bars-box::before {
+  content: "📉";
+}
+
+.dds__chart-insights::before {
+  content: "📈";
+}
+
+.dds__chat-dots::before {
+  content: "💬";
+}
+
+.dds__check::before {
+  content: "✓";
+}
+
+.dds__check-property::before {
+  content: "";
+}
+
+.dds__chevron-cir-down::before {
+  content: "⮋";
+}
+
+.dds__chevron-cir-left::before {
+  content: "⮈";
+}
+
+.dds__chevron-cir-right::before {
+  content: "⮊";
+}
+
+.dds__chevron-cir-up::before {
+  content: "⮉";
+}
+
+.dds__chevron-down::before {
+  content: "﹀";
+}
+
+.dds__chevron-left::before {
+  content: "〈";
+}
+
+.dds__chevron-right::before {
+  content: "〉";
+}
+
+.dds__chevron-up::before {
+  content: "︿";
+}
+
+.dds__chip-set::before {
+  content: "▦";
+}
+
+.dds__clipboard::before {
+  content: "📋";
+}
+
+.dds__clipboard-check::before {
+  content: "";
+}
+
+.dds__clipboard-lines::before {
+  content: "";
+}
+
+.dds__clipboard-notes::before {
+  content: "";
+}
+
+.dds__clipboard-remove::before {
+  content: "";
+}
+
+.dds__clipboard-search::before {
+  content: "";
+}
+
+.dds__clock::before {
+  content: "🕒";
+}
+
+.dds__clock-arrow-left::before {
+  content: "🕓";
+}
+
+.dds__clock-arrow-right::before {
+  content: "🕕";
+}
+
+.dds__clone::before {
+  content: "🗗";
+}
+
+.dds__close-x::before {
+  content: "🗙";
+}
+
+.dds__close-back::before {
+  content: "⌦";
+}
+
+.dds__close-cir::before {
+  content: "🗵";
+}
+
+.dds__close-sqr::before {
+  content: "🗷";
+}
+
+.dds__cloud::before {
+  content: "☁";
+}
+
+.dds__cloud-check::before {
+  content: "🌩";
+}
+
+.dds__cloud-document::before {
+  content: "";
+}
+
+.dds__cloud-iq::before {
+  content: "";
+}
+
+.dds__cloud-restore::before {
+  content: "";
+}
+
+.dds__cloud-upload::before {
+  content: "";
+}
+
+.dds__cloud-wireless::before {
+  content: "";
+}
+
+.dds__collapse-down::before {
+  content: "";
+}
+
+.dds__collapse-down-sqr::before {
+  content: "⏬";
+}
+
+.dds__collapse-up::before {
+  content: "";
+}
+
+.dds__collapse-up-sqr::before {
+  content: "⏫";
+}
+
+.dds__column-add::before {
+  content: "";
+}
+
+.dds__comment::before {
+  content: "🗨";
+}
+
+.dds__comment-add::before {
+  content: "";
+}
+
+.dds__comment-check::before {
+  content: "";
+}
+
+.dds__compare::before {
+  content: "⥦";
+}
+
+.dds__conversation::before {
+  content: "🗪";
+}
+
+.dds__conversation-cir::before {
+  content: "🗫";
+}
+
+.dds__copy::before {
+  content: "🗇";
+}
+
+.dds__copy-alt::before {
+  content: "🗍";
+}
+
+.dds__cube::before {
+  content: "📦";
+}
+
+.dds__currency::before {
+  content: "$";
+}
+
+.dds__currency-coins::before {
+  content: "";
+}
+
+.dds__currency-coins-pounds::before {
+  content: "";
+}
+
+.dds__currency-coins-rupees::before {
+  content: "";
+}
+
+.dds__currency-coins-yen::before {
+  content: "";
+}
+
+.dds__currency-coins-indian-rupees::before {
+  content: "";
+}
+
+.dds__currency-coins-generic::before {
+  content: "";
+}
+
+.dds__currency-coins-euros::before {
+  content: "";
+}
+
+.dds__cursor::before {
+  content: "☝";
+}
+
+.dds__cursor-clock::before {
+  content: "";
+}
+
+.dds__dashboard::before {
+  content: "🗠";
+}
+
+.dds__data-center::before {
+  content: "🏢";
+}
+
+.dds__data-compute::before {
+  content: "🖭";
+}
+
+.dds__datastore::before {
+  content: "🖬";
+}
+
+.dds__debug::before {
+  content: "🐞";
+}
+
+.dds__deploy::before {
+  content: "";
+}
+
+.dds__device-data-center::before {
+  content: "🖪";
+}
+
+.dds__device-desktop::before {
+  content: "";
+}
+
+.dds__device-laptop::before {
+  content: "🖴";
+}
+
+.dds__device-laptop-detachable::before {
+  content: "";
+}
+
+.dds__device-lock-screen::before {
+  content: "";
+}
+
+.dds__device-mobile::before {
+  content: "🖁";
+}
+
+.dds__device-modular::before {
+  content: "💻";
+}
+
+.dds__device-monitor::before {
+  content: "⎚";
+}
+
+.dds__device-nodes::before {
+  content: "";
+}
+
+.dds__device-screen-size::before {
+  content: "";
+}
+
+.dds__device-server::before {
+  content: "🖶";
+}
+
+.dds__device-server-tower::before {
+  content: "🖥";
+}
+
+.dds__device-storage-array::before {
+  content: "";
+}
+
+.dds__device-switch-blade::before {
+  content: "";
+}
+
+.dds__device-switch-blade-2U::before {
+  content: "";
+}
+
+.dds__device-tablet-horiz::before {
+  content: "";
+}
+
+.dds__device-tablet-vert::before {
+  content: "";
+}
+
+.dds__device-thin-client::before {
+  content: "";
+}
+
+.dds__diagnostic::before {
+  content: "🗡";
+}
+
+.dds__dimensions-weight::before {
+  content: "📏";
+}
+
+.dds__disc-arrow-down::before {
+  content: "";
+}
+
+.dds__disc-arrow-up::before {
+  content: "";
+}
+
+.dds__disc-check::before {
+  content: "";
+}
+
+.dds__disc-insert::before {
+  content: "";
+}
+
+.dds__disc-recovery::before {
+  content: "";
+}
+
+.dds__disc-secure::before {
+  content: "";
+}
+
+.dds__disc-software::before {
+  content: "🖸";
+}
+
+.dds__disc-system::before {
+  content: "";
+}
+
+.dds__doc-add::before {
+  content: "🖹";
+}
+
+.dds__doc-arrow-left::before {
+  content: "🖺";
+}
+
+.dds__doc-arrow-right::before {
+  content: "🗋";
+}
+
+.dds__doc-check::before {
+  content: "";
+}
+
+.dds__doc-cube::before {
+  content: "";
+}
+
+.dds__doc-lines::before {
+  content: "🗈";
+}
+
+.dds__doc-manual::before {
+  content: "";
+}
+
+.dds__doc-reports::before {
+  content: "🗉";
+}
+
+.dds__docs-copy-alt::before {
+  content: "";
+}
+
+.dds__doc-search::before {
+  content: "";
+}
+
+.dds__doc-secure::before {
+  content: "";
+}
+
+.dds__doc-settings::before {
+  content: "";
+}
+
+.dds__doc-support::before {
+  content: "";
+}
+
+.dds__document::before {
+  content: "🗏";
+}
+
+.dds__download::before {
+  content: "";
+}
+
+.dds__download-alt::before {
+  content: "⤓";
+}
+
+.dds__ear::before {
+  content: "👂";
+}
+
+.dds__ellipsis::before {
+  content: "";
+}
+
+.dds__energy-efficient::before {
+  content: "🌳";
+}
+
+.dds__escalate-tri::before {
+  content: "⧋";
+}
+
+.dds__exit-door::before {
+  content: "⇚";
+}
+
+.dds__expand::before {
+  content: "";
+}
+
+.dds__eye-view-off::before {
+  content: "";
+}
+
+.dds__eye-view-on::before {
+  content: "👁";
+}
+
+.dds__fan::before {
+  content: "❋";
+}
+
+.dds__filter::before {
+  content: "⛛";
+}
+
+.dds__filter-add::before {
+  content: "";
+}
+
+.dds__filter-clear::before {
+  content: "";
+}
+
+.dds__filter-move::before {
+  content: "";
+}
+
+.dds__filter-remove::before {
+  content: "";
+}
+
+.dds__fingerprint::before {
+  content: "👆";
+}
+
+.dds__flag::before {
+  content: "⛿";
+}
+
+.dds__flame::before {
+  content: "🔥";
+}
+
+.dds__flash-drive::before {
+  content: "💽";
+}
+
+.dds__folder::before {
+  content: "🗀";
+}
+
+.dds__folder-add::before {
+  content: "🗂";
+}
+
+.dds__folder-arrow-right::before {
+  content: "🖿";
+}
+
+.dds__folder-arrow-up::before {
+  content: "";
+}
+
+.dds__folder-media::before {
+  content: "";
+}
+
+.dds__full-screen::before {
+  content: "🗖";
+}
+
+.dds__game-controller::before {
+  content: "";
+}
+
+.dds__gaming-desktop::before {
+  content: "";
+}
+
+.dds__gear::before {
+  content: "⚙";
+}
+
+.dds__gear-arrow::before {
+  content: "";
+}
+
+.dds__gear-wrench::before {
+  content: "";
+}
+
+.dds__gift-card::before {
+  content: "";
+}
+
+.dds__globe-location::before {
+  content: "";
+}
+
+.dds__globe-simple::before {
+  content: "🌐";
+}
+
+.dds__graphics-card::before {
+  content: "";
+}
+
+.dds__handle::before {
+  content: "⋮";
+}
+
+.dds__hand-touch::before {
+  content: "🖢";
+}
+
+.dds__hand-touch-screen::before {
+  content: "";
+}
+
+.dds__hard-drive::before {
+  content: "🖫";
+}
+
+.dds__hd-generic::before {
+  content: "";
+}
+
+.dds__headphones::before {
+  content: "";
+}
+
+.dds__headset::before {
+  content: "";
+}
+
+.dds__heat::before {
+  content: "";
+}
+
+.dds__help-cir::before {
+  content: "⯑";
+}
+
+.dds__help-sqr::before {
+  content: "";
+}
+
+.dds__home::before {
+  content: "🏡";
+}
+
+.dds__host-server::before {
+  content: "";
+}
+
+.dds__host-server-hex::before {
+  content: "";
+}
+
+.dds__host-server-rack::before {
+  content: "";
+}
+
+.dds__import::before {
+  content: "↧";
+}
+
+.dds__import-alt::before {
+  content: "↥";
+}
+
+.dds__inbox::before {
+  content: "📥";
+}
+
+.dds__inbox-arrow-down::before {
+  content: "";
+}
+
+.dds__infrastructure::before {
+  content: "";
+}
+
+.dds__ink-toner::before {
+  content: "🖨";
+}
+
+.dds__key::before {
+  content: "🔑";
+}
+
+.dds__keyboard::before {
+  content: "⌨";
+}
+
+.dds__keyboard-mouse::before {
+  content: "🖦";
+}
+
+.dds__keypad::before {
+  content: "";
+}
+
+.dds__laptop-generic::before {
+  content: "🖷";
+}
+
+.dds__lcd::before {
+  content: "";
+}
+
+.dds__lightbulb::before {
+  content: "💡";
+}
+
+.dds__location::before {
+  content: "📍";
+}
+
+.dds__location-play::before {
+  content: "";
+}
+
+.dds__lock-closed::before {
+  content: "🔒";
+}
+
+.dds__lock-open::before {
+  content: "🔓";
+}
+
+.dds__log-in::before {
+  content: "⍈";
+}
+
+.dds__log-out::before {
+  content: "";
+}
+
+.dds__mail::before {
+  content: "🖂";
+}
+
+.dds__mail-open::before {
+  content: "🖆";
+}
+
+.dds__manage-info::before {
+  content: "";
+}
+
+.dds__management-software::before {
+  content: "";
+}
+
+.dds__memory::before {
+  content: "";
+}
+
+.dds__memory-card-reader::before {
+  content: "";
+}
+
+.dds__memory-sd-card::before {
+  content: "";
+}
+
+.dds__menu-closed::before {
+  content: "☰";
+}
+
+.dds__metadata::before {
+  content: "";
+}
+
+.dds__microchip::before {
+  content: "";
+}
+
+.dds__microphone-off::before {
+  content: "🎤";
+}
+
+.dds__microphone-on::before {
+  content: "";
+}
+
+.dds__migrate::before {
+  content: "";
+}
+
+.dds__minimize::before {
+  content: "";
+}
+
+.dds__minus-minimize::before {
+  content: "−";
+}
+
+.dds__missing-image::before {
+  content: "⛶";
+}
+
+.dds__mouse::before {
+  content: "🖰";
+}
+
+.dds__mouse-cord::before {
+  content: "🖯";
+}
+
+.dds__movie-clapper::before {
+  content: "🎬";
+}
+
+.dds__movie-clapper-play::before {
+  content: "🎦";
+}
+
+.dds__music-note::before {
+  content: "🎝";
+}
+
+.dds__network-connected::before {
+  content: "";
+}
+
+.dds__network-horiz::before {
+  content: "";
+}
+
+.dds__network-share::before {
+  content: "";
+}
+
+.dds__network-vert::before {
+  content: "🖧";
+}
+
+.dds__network-vert-disable::before {
+  content: "";
+}
+
+.dds__objects::before {
+  content: "";
+}
+
+.dds__office::before {
+  content: "🏣";
+}
+
+.dds__overflow::before {
+  content: "⋯";
+}
+
+.dds__package-closed::before {
+  content: "";
+}
+
+.dds__package-open::before {
+  content: "";
+}
+
+.dds__paint-brush::before {
+  content: "🖌";
+}
+
+.dds__paint-palette::before {
+  content: "🎨";
+}
+
+.dds__paper-clip::before {
+  content: "📎";
+}
+
+.dds__partners::before {
+  content: "✋";
+}
+
+.dds__password::before {
+  content: "";
+}
+
+.dds__pause::before {
+  content: "⏸";
+}
+
+.dds__pause-sqr::before {
+  content: "";
+}
+
+.dds__pencil::before {
+  content: "🖉";
+}
+
+.dds__pencil-check::before {
+  content: "🖊";
+}
+
+.dds__pencil-mark::before {
+  content: "🖎";
+}
+
+.dds__pencil-remove::before {
+  content: "";
+}
+
+.dds__performance::before {
+  content: "⏲";
+}
+
+.dds__phone::before {
+  content: "🕾";
+}
+
+.dds__pie-chart::before {
+  content: "";
+}
+
+.dds__pie-chart-solid::before {
+  content: "";
+}
+
+.dds__pin::before {
+  content: "📌";
+}
+
+.dds__play-cir::before {
+  content: "⏯";
+}
+
+.dds__play-sqr::before {
+  content: "";
+}
+
+.dds__plus-add::before {
+  content: "";
+}
+
+.dds__popout-double::before {
+  content: "";
+}
+
+.dds__popout-share::before {
+  content: "";
+}
+
+.dds__popout-window::before {
+  content: "⎘";
+}
+
+.dds__popout-window-arrow::before {
+  content: "";
+}
+
+.dds__pop-up-arrow::before {
+  content: "⇱";
+}
+
+.dds__pop-up-arrow-corner::before {
+  content: "";
+}
+
+.dds__port-double::before {
+  content: "";
+}
+
+.dds__power-off::before {
+  content: "";
+}
+
+.dds__power-on::before {
+  content: "";
+}
+
+.dds__power-supply::before {
+  content: "🔌";
+}
+
+.dds__power-supply-cord::before {
+  content: "";
+}
+
+.dds__power-supply-double::before {
+  content: "";
+}
+
+.dds__printer::before {
+  content: "📠";
+}
+
+.dds__processor::before {
+  content: "";
+}
+
+.dds__productivity::before {
+  content: "";
+}
+
+.dds__projector::before {
+  content: "📾";
+}
+
+.dds__protractor::before {
+  content: "";
+}
+
+.dds__pulse::before {
+  content: "";
+}
+
+.dds__puzzle::before {
+  content: "";
+}
+
+.dds__qos::before {
+  content: "";
+}
+
+.dds__rack::before {
+  content: "";
+}
+
+.dds__recycle::before {
+  content: "♲";
+}
+
+.dds__recycle-bin::before {
+  content: "♻";
+}
+
+.dds__redo::before {
+  content: "⮎";
+}
+
+.dds__redo-move::before {
+  content: "⟳";
+}
+
+.dds__refresh-spin::before {
+  content: "🗘";
+}
+
+.dds__removable-storage-usb::before {
+  content: "";
+}
+
+.dds__remove-cir::before {
+  content: "⊝";
+}
+
+.dds__remove-sqr::before {
+  content: "⊟";
+}
+
+.dds__reset::before {
+  content: "⟲";
+}
+
+.dds__restore::before {
+  content: "⭹";
+}
+
+.dds__rss::before {
+  content: "";
+}
+
+.dds__save::before {
+  content: "⍗";
+}
+
+.dds__save-disk::before {
+  content: "💾";
+}
+
+.dds__scale::before {
+  content: "⤒";
+}
+
+.dds__search::before {
+  content: "🔍";
+}
+
+.dds__search-arrow-left::before {
+  content: "🔎";
+}
+
+.dds__search-arrow-right::before {
+  content: "";
+}
+
+.dds__search-back::before {
+  content: "⏮";
+}
+
+.dds__search-forward::before {
+  content: "⏭";
+}
+
+.dds__server-rack-arrow-right::before {
+  content: "";
+}
+
+.dds__server-rack-search::before {
+  content: "";
+}
+
+.dds__server-rack-support::before {
+  content: "";
+}
+
+.dds__share::before {
+  content: "↷";
+}
+
+.dds__shield::before {
+  content: "⛉";
+}
+
+.dds__shield-check::before {
+  content: "⛊";
+}
+
+.dds__shield-protect::before {
+  content: "";
+}
+
+.dds__shipping::before {
+  content: "";
+}
+
+.dds__skip-forward::before {
+  content: "";
+}
+
+.dds__skip-to-end::before {
+  content: "";
+}
+
+.dds__skip-to-front::before {
+  content: "";
+}
+
+.dds__slider-horiz::before {
+  content: "";
+}
+
+.dds__slider-vert::before {
+  content: "🎚";
+}
+
+.dds__smart-select::before {
+  content: "";
+}
+
+.dds__snapshot::before {
+  content: "⯐";
+}
+
+.dds__snowflake::before {
+  content: "❄";
+}
+
+.dds__social-networking::before {
+  content: "";
+}
+
+.dds__sort-az::before {
+  content: "";
+}
+
+.dds__sort-horiz::before {
+  content: "⮂";
+}
+
+.dds__sort-vert::before {
+  content: "⥮";
+}
+
+.dds__sort-za::before {
+  content: "";
+}
+
+.dds__speaker-double::before {
+  content: "";
+}
+
+.dds__stack::before {
+  content: "";
+}
+
+.dds__star::before {
+  content: "✩";
+}
+
+.dds__start-up::before {
+  content: "";
+}
+
+.dds__stop::before {
+  content: "⏹";
+}
+
+.dds__suspend::before {
+  content: "";
+}
+
+.dds__sync-horiz::before {
+  content: "⮔";
+}
+
+.dds__sync-vert::before {
+  content: "";
+}
+
+.dds__tag::before {
+  content: "🏷";
+}
+
+.dds__tag-deal::before {
+  content: "";
+}
+
+.dds__task-check::before {
+  content: "";
+}
+
+.dds__task-check-progress::before {
+  content: "";
+}
+
+.dds__thumb-down::before {
+  content: "👎";
+}
+
+.dds__thumb-up::before {
+  content: "👍";
+}
+
+.dds__toolbox::before {
+  content: "";
+}
+
+.dds__touch-pad::before {
+  content: "";
+}
+
+.dds__trash::before {
+  content: "🗑";
+}
+
+.dds__tv::before {
+  content: "📺";
+}
+
+.dds__undo::before {
+  content: "⮌";
+}
+
+.dds__undo-move::before {
+  content: "⭮";
+}
+
+.dds__upload::before {
+  content: "⭫";
+}
+
+.dds__usb::before {
+  content: "";
+}
+
+.dds__user::before {
+  content: "👩";
+}
+
+.dds__user-about::before {
+  content: "";
+}
+
+.dds__user-add::before {
+  content: "";
+}
+
+.dds__user-check::before {
+  content: "";
+}
+
+.dds__user-cir::before {
+  content: "";
+}
+
+.dds__user-cir-add::before {
+  content: "";
+}
+
+.dds__user-cir-remove::before {
+  content: "";
+}
+
+.dds__user-contact::before {
+  content: "";
+}
+
+.dds__user-directory::before {
+  content: "";
+}
+
+.dds__user-disable::before {
+  content: "";
+}
+
+.dds__user-group::before {
+  content: "👪";
+}
+
+.dds__user-group-chat::before {
+  content: "";
+}
+
+.dds__user-group-disable::before {
+  content: "";
+}
+
+.dds__user-groups::before {
+  content: "👫";
+}
+
+.dds__user-groups-disable::before {
+  content: "";
+}
+
+.dds__user-lock::before {
+  content: "";
+}
+
+.dds__user-remove::before {
+  content: "";
+}
+
+.dds__user-search::before {
+  content: "";
+}
+
+.dds__user-unlock::before {
+  content: "";
+}
+
+.dds__video-card::before {
+  content: "";
+}
+
+.dds__view-column::before {
+  content: "▥";
+}
+
+.dds__view-detailed::before {
+  content: "";
+}
+
+.dds__view-grid::before {
+  content: "▤";
+}
+
+.dds__view-grid-alt::before {
+  content: "▩";
+}
+
+.dds__view-list::before {
+  content: "";
+}
+
+.dds__view-row::before {
+  content: "";
+}
+
+.dds__view-table::before {
+  content: "";
+}
+
+.dds__virtualization::before {
+  content: "";
+}
+
+.dds__volume::before {
+  content: "";
+}
+
+.dds__warranty::before {
+  content: "🗰";
+}
+
+.dds__web-camera::before {
+  content: "";
+}
+
+.dds__web-camera-hd::before {
+  content: "";
+}
+
+.dds__weight-bell::before {
+  content: "🔔";
+}
+
+.dds__wifi::before {
+  content: "📡";
+}
+
+.dds__wifi-simple::before {
+  content: "";
+}
+
+.dds__windows-support::before {
+  content: "";
+}
+
+.dds__wrench-cir::before {
+  content: "";
+}
+
+.dds__wrench-double::before {
+  content: "";
+}
+
+.dds__wrench-manage::before {
+  content: "";
+}
+
+.dds__wrench-single::before {
+  content: "🔧";
+}
+
+.dds__wrench-tools::before {
+  content: "🛠";
+}
+
+.dds__zoom-in::before {
+  content: "";
+}
+
+.dds__zoom-out::before {
+  content: "";
+}
+
+.dds__arrow-tri-solid-stacked::before {
+  content: "";
+}
+
+.dds__popout-double-condense-vertical::before {
+  content: "";
+}
+
+.dds__popout-double-vertical::before {
+  content: "";
+}
+
+.dds__popout-double-condense::before {
+  content: "";
+}
+
+.dds__wifi-none::before {
+  content: "";
+}

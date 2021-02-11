@@ -1,0 +1,627 @@
+@charset "UTF-8";
+/*!
+ * Bootstrap Reboot v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+/*!
+ * Need to add html and body styles directly to the wrapper class
+ * since there is no way to namespace these elements without affecting
+ * other elements on the page.
+*/
+.dds__reboot-wrapper {
+  /* a subtle focus style for keyboard-input elements */
+  /* no outline for non-keyboard-inputs elements */
+  background-color: #fff;
+  color: #000000;
+  font-family: "Roboto", "Cordia New", "Microsoft Sans Serif", "Utsaah", "Devanagari MT", "Nirmala UI", "Latha", "InaiMathi", "Gautami", "Telugu Sangam MN", "Tunga", "Kannada Sangam MN", "Kartika", "Malayalam Sangam MN", "Shruti", "Nirmala UI", "Gujarati MT", "Gujarati Sangam MN", "Vrinda", "Bangla Sangam MN", "Meiryo UI Reg", "メイリオ Reg", "MS UI Gothic Reg", "Hiragino Kaku Gothic Reg", "ヒラギノ角ゴ Pro W3 Reg", "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", "Microsoft JhengHei", "微軟正黑體", "Malgun Gothic", "맑은 고딕", "Gulim", "AppleGothic", "Apple LiGothic", "LiHei Pro", "Osaka", "STHeiti", "华文黑体", "STXihei", "华文细黑", "SimHei", "黑体", "Arial Unicode MS", "Arial", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-align: left;
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -ms-text-size-adjust: 100%;
+}
+
+.dds__reboot-wrapper *,
+.dds__reboot-wrapper *::before,
+.dds__reboot-wrapper *::after {
+  box-sizing: border-box;
+}
+
+.dds__reboot-wrapper html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  height: 100%;
+}
+
+.dds__reboot-wrapper body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  color: #000000;
+  font-family: "Roboto", "Cordia New", "Microsoft Sans Serif", "Utsaah", "Devanagari MT", "Nirmala UI", "Latha", "InaiMathi", "Gautami", "Telugu Sangam MN", "Tunga", "Kannada Sangam MN", "Kartika", "Malayalam Sangam MN", "Shruti", "Nirmala UI", "Gujarati MT", "Gujarati Sangam MN", "Vrinda", "Bangla Sangam MN", "Meiryo UI Reg", "メイリオ Reg", "MS UI Gothic Reg", "Hiragino Kaku Gothic Reg", "ヒラギノ角ゴ Pro W3 Reg", "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", "Microsoft JhengHei", "微軟正黑體", "Malgun Gothic", "맑은 고딕", "Gulim", "AppleGothic", "Apple LiGothic", "LiHei Pro", "Osaka", "STHeiti", "华文黑体", "STXihei", "华文细黑", "SimHei", "黑体", "Arial Unicode MS", "Arial", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+.dds__reboot-wrapper article,
+.dds__reboot-wrapper aside,
+.dds__reboot-wrapper figcaption,
+.dds__reboot-wrapper figure,
+.dds__reboot-wrapper footer,
+.dds__reboot-wrapper header,
+.dds__reboot-wrapper hgroup,
+.dds__reboot-wrapper main,
+.dds__reboot-wrapper nav,
+.dds__reboot-wrapper section {
+  display: block;
+}
+
+.dds__reboot-wrapper [tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+.dds__reboot-wrapper hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.dds__reboot-wrapper h1,
+.dds__reboot-wrapper h2,
+.dds__reboot-wrapper h3,
+.dds__reboot-wrapper h4,
+.dds__reboot-wrapper h5,
+.dds__reboot-wrapper h6 {
+  margin-bottom: 0.625rem;
+  margin-top: 0;
+}
+
+.dds__reboot-wrapper p {
+  margin-bottom: 0.625rem;
+  margin-top: 0;
+}
+
+.dds__reboot-wrapper abbr[title],
+.dds__reboot-wrapper abbr[data-original-title] {
+  border-bottom: 0;
+  cursor: help;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+.dds__reboot-wrapper address {
+  font-style: normal;
+  line-height: inherit;
+  margin-bottom: 1rem;
+}
+
+.dds__reboot-wrapper ol,
+.dds__reboot-wrapper ul,
+.dds__reboot-wrapper dl {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.dds__reboot-wrapper ol ol,
+.dds__reboot-wrapper ul ul,
+.dds__reboot-wrapper ol ul,
+.dds__reboot-wrapper ul ol {
+  margin-bottom: 0;
+}
+
+.dds__reboot-wrapper dt {
+  font-weight: 700;
+}
+
+.dds__reboot-wrapper dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+.dds__reboot-wrapper blockquote {
+  margin: 0 0 1rem;
+}
+
+.dds__reboot-wrapper dfn {
+  font-style: italic;
+}
+
+.dds__reboot-wrapper b,
+.dds__reboot-wrapper strong {
+  font-weight: bolder;
+}
+
+.dds__reboot-wrapper small {
+  font-size: 80%;
+}
+
+.dds__reboot-wrapper sub,
+.dds__reboot-wrapper sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.dds__reboot-wrapper sub {
+  bottom: -0.25em;
+}
+
+.dds__reboot-wrapper sup {
+  top: -0.5em;
+}
+
+.dds__reboot-wrapper a {
+  background-color: transparent;
+  color: #006bbd;
+  text-decoration: none;
+}
+
+.dds__reboot-wrapper a svg {
+  fill: #006bbd;
+}
+
+.dds__reboot-wrapper a:hover {
+  color: #00447c;
+  text-decoration: underline;
+}
+
+.dds__reboot-wrapper a:hover svg {
+  fill: #00447c;
+}
+
+.dds__reboot-wrapper a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dds__reboot-wrapper a:not([href]):not([tabindex]):hover, .dds__reboot-wrapper a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dds__reboot-wrapper a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+.dds__reboot-wrapper pre,
+.dds__reboot-wrapper code,
+.dds__reboot-wrapper kbd,
+.dds__reboot-wrapper samp {
+  font-family: sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+.dds__reboot-wrapper pre {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  overflow: auto;
+}
+
+.dds__reboot-wrapper figure {
+  margin: 0 0 1rem;
+}
+
+.dds__reboot-wrapper img {
+  border-style: none;
+  vertical-align: middle;
+}
+
+.dds__reboot-wrapper svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.dds__reboot-wrapper table {
+  border-collapse: collapse;
+}
+
+.dds__reboot-wrapper caption {
+  caption-side: bottom;
+  color: #767676;
+  padding-bottom: 0.5714rem;
+  padding-top: 0.5714rem;
+  text-align: left;
+}
+
+.dds__reboot-wrapper th {
+  text-align: inherit;
+}
+
+.dds__reboot-wrapper label {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.dds__reboot-wrapper button {
+  border-radius: 0;
+}
+
+.dds__reboot-wrapper button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.dds__reboot-wrapper input,
+.dds__reboot-wrapper button,
+.dds__reboot-wrapper select,
+.dds__reboot-wrapper optgroup,
+.dds__reboot-wrapper textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.dds__reboot-wrapper button,
+.dds__reboot-wrapper input {
+  overflow: visible;
+}
+
+.dds__reboot-wrapper button,
+.dds__reboot-wrapper select {
+  text-transform: none;
+}
+
+.dds__reboot-wrapper button::-moz-focus-inner,
+.dds__reboot-wrapper [type="button"]::-moz-focus-inner,
+.dds__reboot-wrapper [type="reset"]::-moz-focus-inner,
+.dds__reboot-wrapper [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.dds__reboot-wrapper input[type="radio"],
+.dds__reboot-wrapper input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.dds__reboot-wrapper textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+.dds__reboot-wrapper fieldset {
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+.dds__reboot-wrapper legend {
+  color: inherit;
+  display: block;
+  font-size: 1.5rem;
+  line-height: inherit;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  width: 100%;
+}
+
+.dds__reboot-wrapper progress {
+  vertical-align: baseline;
+}
+
+.dds__reboot-wrapper [type="number"]::-webkit-inner-spin-button,
+.dds__reboot-wrapper [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.dds__reboot-wrapper [type="search"] {
+  outline-offset: -2px;
+}
+
+.dds__reboot-wrapper ::-webkit-file-upload-button {
+  font: inherit;
+}
+
+.dds__reboot-wrapper output {
+  display: inline-block;
+}
+
+.dds__reboot-wrapper summary {
+  cursor: pointer;
+  display: list-item;
+}
+
+.dds__reboot-wrapper template {
+  display: none;
+}
+
+.dds__reboot-wrapper [hidden] {
+  display: none !important;
+}
+
+.dds__reboot-wrapper p,
+.dds__reboot-wrapper li,
+.dds__reboot-wrapper a,
+.dds__reboot-wrapper div,
+.dds__reboot-wrapper legend,
+.dds__reboot-wrapper span {
+  -webkit-text-size-adjust: 100%;
+}
+
+.dds__reboot-wrapper body:not(.user-is-tabbing) a:focus,
+.dds__reboot-wrapper body:not(.user-is-tabbing) button:focus,
+.dds__reboot-wrapper body:not(.user-is-tabbing) input:focus,
+.dds__reboot-wrapper body:not(.user-is-tabbing) label:focus,
+.dds__reboot-wrapper body:not(.user-is-tabbing) select:focus,
+.dds__reboot-wrapper body:not(.user-is-tabbing) textarea:focus,
+.dds__reboot-wrapper body:not(.user-is-tabbing) section:focus,
+.dds__reboot-wrapper body:not(.user-is-tabbing) span:focus,
+.dds__reboot-wrapper body:not(.user-is-tabbing) div:focus,
+.dds__reboot-wrapper body:not(.user-is-tabbing) h3:focus {
+  outline: none !important;
+  text-decoration: none;
+}
+
+.dds__reboot-wrapper body.user-is-tabbing *:focus,
+.dds__reboot-wrapper body.user-is-tabbing input:focus ~ .dds__card-label-container {
+  outline: 0.0625rem solid #000000 !important;
+  outline-offset: 0.125rem !important;
+  /* for non-webkit browsers */
+  outline-offset: 0.125rem -webkit-focus-ring-color !important;
+}
+
+.dds__reboot-wrapper .text-input:focus {
+  outline: 0.0625rem solid #c8c9c7;
+  /* Adjust to suit your tastes */
+}
+
+.dds__reboot-wrapper button:focus,
+.dds__reboot-wrapper select:focus {
+  outline: none;
+}
+
+.dds__reboot-wrapper caption {
+  caption-side: unset;
+  color: #767676;
+  padding-bottom: 0.5714rem;
+  padding-top: 0.5714rem;
+  text-align: left;
+}
+
+.dds__reboot-wrapper input,
+.dds__reboot-wrapper button,
+.dds__reboot-wrapper select,
+.dds__reboot-wrapper optgroup,
+.dds__reboot-wrapper textarea {
+  font-family: "Roboto", "Cordia New", "Microsoft Sans Serif", "Utsaah", "Devanagari MT", "Nirmala UI", "Latha", "InaiMathi", "Gautami", "Telugu Sangam MN", "Tunga", "Kannada Sangam MN", "Kartika", "Malayalam Sangam MN", "Shruti", "Nirmala UI", "Gujarati MT", "Gujarati Sangam MN", "Vrinda", "Bangla Sangam MN", "Meiryo UI Reg", "メイリオ Reg", "MS UI Gothic Reg", "Hiragino Kaku Gothic Reg", "ヒラギノ角ゴ Pro W3 Reg", "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", "Microsoft JhengHei", "微軟正黑體", "Malgun Gothic", "맑은 고딕", "Gulim", "AppleGothic", "Apple LiGothic", "LiHei Pro", "Osaka", "STHeiti", "华文黑体", "STXihei", "华文细黑", "SimHei", "黑体", "Arial Unicode MS", "Arial", sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.dds__reboot-wrapper small {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.dds__reboot-wrapper mark {
+  background-color: #eeeeee;
+  padding: 0.2em;
+}
+
+.dds__reboot-wrapper hr {
+  border: 0;
+  border-top: 0.0625rem solid #cccccc;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.dds__reboot-wrapper h1,
+.dds__reboot-wrapper h2,
+.dds__reboot-wrapper h3 {
+  color: inherit;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 0.625rem;
+}
+
+.dds__reboot-wrapper h4,
+.dds__reboot-wrapper h5,
+.dds__reboot-wrapper h6 {
+  color: inherit;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0.625rem;
+}
+
+.dds__reboot-wrapper h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.dds__reboot-wrapper h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.dds__reboot-wrapper h3 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.dds__reboot-wrapper h3.dds__feature {
+  font-weight: 300;
+}
+
+.dds__reboot-wrapper h4 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.dds__reboot-wrapper h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.dds__reboot-wrapper h6 {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.dds__reboot-wrapper h1 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.dds__reboot-wrapper h2 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.dds__reboot-wrapper h3 {
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
+}
+
+.dds__reboot-wrapper h3.dds__feature {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.dds__reboot-wrapper h4 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.dds__reboot-wrapper h5 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.dds__reboot-wrapper h6 {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .dds__reboot-wrapper h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .dds__reboot-wrapper h2 {
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+  }
+  .dds__reboot-wrapper h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .dds__reboot-wrapper h3.dds__feature {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+  }
+  .dds__reboot-wrapper h4 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  .dds__reboot-wrapper h5 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .dds__reboot-wrapper h6 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .dds__reboot-wrapper h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .dds__reboot-wrapper h2 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+  .dds__reboot-wrapper h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .dds__reboot-wrapper h3.dds__feature {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .dds__reboot-wrapper h4 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  .dds__reboot-wrapper h5 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .dds__reboot-wrapper h6 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.dds__reboot-wrapper code {
+  color: #b7295a;
+  font-size: 87.5%;
+  word-break: break-word;
+}
+
+a > .dds__reboot-wrapper code {
+  color: inherit;
+}
+
+.dds__reboot-wrapper kbd {
+  border-radius: 0.0625rem;
+  background-color: #212529;
+  color: #fff;
+  font-size: 87.5%;
+  padding: 0.2rem 0.4rem;
+}
+
+.dds__reboot-wrapper kbd kbd {
+  font-size: 100%;
+  font-weight: 700;
+  padding: 0;
+}
+
+.dds__reboot-wrapper pre {
+  color: #212529;
+  display: block;
+  font-size: 87.5%;
+}
+
+.dds__reboot-wrapper pre code {
+  color: inherit;
+  font-size: inherit;
+  word-break: normal;
+}
+
+.dds__reboot-wrapper legend {
+  font-size: 0.875rem;
+}
+
+.dds__reboot-wrapper section {
+  padding: 0.3125rem;
+}
